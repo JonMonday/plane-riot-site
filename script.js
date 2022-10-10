@@ -21,7 +21,6 @@ const elements =    [["languages-wrapper"],
                     ['cards-16-19']]
 
 document.addEventListener("click", (evnt) => {
-    console.log(evnt.target)
     for (var i = 0; i < triggers.length; i++) {
         triggers[i].map((value) => {
             if (value == evnt.target.id || evnt.target.classList.contains(value)) {
