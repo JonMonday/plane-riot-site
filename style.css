@@ -157,14 +157,7 @@ li{
 }
     .links:hover > .link{
         animation: blink 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
-        box-shadow: 0px 4px 16px 0px var(--dark-grey);
     }
-    .links:hover > .link > .link-img{
-        transform: rotate(0deg);
-        transition: transform .5s linear;
-    }
-
-
     .link{
         gap: 10px;
         padding: 10px 16px;
@@ -178,10 +171,6 @@ li{
             line-height: 120%;
             letter-spacing: .08em;
             text-transform: uppercase;
-        }
-        .link-img{
-            margin-bottom: 1px;
-            transform: rotate(180deg);
         }
 
 
@@ -425,6 +414,7 @@ li{
                 letter-spacing: .08em;
                 text-transform: uppercase;
                 margin-block: 4px;
+                padding-right: 16px;
                 border-radius: 8px;
             }
             .ban-link:hover{
@@ -439,11 +429,6 @@ li{
                 .ban-link.main > .link-img{
                     display: none;
                     width: 10px;
-                    margin-right: 10px;
-                }
-                .ban-link.main:hover > .link-img{
-                    transform: rotate(0deg);
-                    transition: transform .5s linear;
                 }
 
             .ban-text{
