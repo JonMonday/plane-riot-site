@@ -82,12 +82,12 @@ li{
 
 .text-bold{
     font-weight: 900;
-    font-size: clamp(0.8125rem, 0.7875rem + 0.1333vw, 0.9375rem);
+    font-size: 14px;
 }
 
 .text-300{
     font-weight: 300;
-    font-size: clamp(0.75rem, 0.725rem + 0.1333vw, 0.875rem);
+    font-size: 13px;
 }
 
 .text-600{
@@ -223,26 +223,29 @@ nav{
                         columns: 13.4em 3;
                         column-gap: 10px;
                     }
-                        .links{
+                        #top-menu-1 > .links >{
                             padding-bottom: 16px;
                             break-inside: avoid;
                         }
-                            .link-main{
+                            #top-menu-1 > .links >.link-main{
                                 justify-content: space-between;
                                 background-color: var(--very-light-grey);
                                 color: var(--black-bg);    
                             }
-                            .link{
+                            #top-menu-1 > .links >.link-sub >.link{
                                 color: var(--light-grey);
                             }
-                            .link-main, .link{
+                            #top-menu-1 > .links >.link-sub >.link:hover{
+                                background-color: var(--grey);
+                            }
+                            #top-menu-1 > .links > .link-main, #top-menu-1 > .links >.link-sub >.link{
                                 width: 100%;
                                 padding: 8px 16px;
                                 border-radius: 6px;
                                 margin-bottom: 5px;
                                 text-transform: uppercase;
                             }
-                            .link-main > .arrow{
+                            #top-menu-1 > .links > .link-main > .arrow{
                                 display: none;
                             }
                         
@@ -365,17 +368,15 @@ nav{
                                         line-height: 120%;
                                     }
                                 .card-content-devices{
-                                    height: 11%;
                                     width: auto;
-                                    border-radius: 16px;
+                                    border-radius: 50px;
                                     background-color: var(--opaque-1);
-                                    padding: 10px 15px;
-                                    gap: 10px;
+                                    padding: 6px 10px;
+                                    gap: 5px;
                                 }
                                     .device{
-                                        width: 12px;
-                                        height: 12px;
-                                        gap: 5px;
+                                        width: 14px;
+                                        height: 14px;
                                     }
                                     #d-windows{
                                         background-image: url("./assets/windows.svg");
@@ -428,20 +429,6 @@ nav{
             }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 @media (max-width: 1800px){
     #top-menu-opp-wrapper, #nav, #top-menu-wrapper{
         padding-inline: 32px;
@@ -460,57 +447,57 @@ nav{
         height: 100%;
         overflow-y: scroll;
     }
-    .link-main{
-        padding: 16px;
-    }
-    .link-main.bgBlack{
-        background-color: var(--black-bg);
-        color: var(--white-bg);
-    }
-    .link-main.bgBlack > .arrow{
-        background-image: url('./assets/arrowDownWhite.svg');
-    }
-    .link-main > .arrow{
-        display: block;
-    }
-    .links{
-        padding-bottom: 10px;
-    }
-    #top-menu-1 > .links > #tog-games ~ .link-sub{
-        display: none;
-    }
-    #top-menu-1 > .links >.link-sub > .link{
-        background-color: var(--very-light-grey);
-    }
-    #top-menu-1 > .links >.link-sub.visible{
-        display: flex;
-    }
-    #top-menu-1 > .links >.link-sub.hidden{
-        display: none;
-    }
+        #top-menu-1 > .links > .link-main, #top-menu-1 > .links > .link-sub > .link{
+            padding: 16px;
+        }
+        #top-menu-1 > .links > .link-main.bgBlack{
+            background-color: var(--black-bg);
+            color: var(--white-bg);
+        }
+        #top-menu-1 > .links > .link-main.bgBlack > .arrow{
+            background-image: url('./assets/arrowDownWhite.svg');
+        }
+        #top-menu-1 > .links > .link-main > .arrow{
+            display: block;
+        }
+        #top-menu-1 > .links > .link-sub > .links{
+            padding-bottom: 10px;
+        }
+        #top-menu-1 > .links > #tog-games ~ .link-sub{
+            display: none;
+        }
+        #top-menu-1 > .links >.link-sub > .link{
+            background-color: var(--grey);
+        }
+        #top-menu-1 > .links >.link-sub.visible{
+            display: flex;
+        }
+        #top-menu-1 > .links >.link-sub.hidden{
+            display: none;
+        }
     #main-cards{
         flex-direction: column;
     }
-    .main-card{
-        width: 100%;
-    }
-    .cards{
-        width: 100%;
-        gap: 20px;
-        margin-block: 10px;
-    }
-    #cards-1-5.hidden{
-        display: none;
-    }
-    #cards-1-5.visible{
-        display: flex;
-    }
-    .card{
-        display: block;
-    }
-    #card-1 ,#card-2 ,#card-3 ,#card-4 ,#card-5 ,#card-6 ,#card-7 ,#card-8 ,#card-9 ,#card-10 ,#card-11 ,#card-12 ,#card-13 ,#card-14 ,#card-15 ,#card-16 ,#card-17 ,#card-18 ,#card-19{
-        display: none;
-    }
+        .main-card{
+            width: 100%;
+        }
+        .cards{
+            width: 100%;
+            gap: 20px;
+            margin-block: 10px;
+        }
+        #cards-1-5.hidden{
+            display: none;
+        }
+        #cards-1-5.visible{
+            display: flex;
+        }
+        .card{
+            display: block;
+        }
+        #card-1 ,#card-2 ,#card-3 ,#card-4 ,#card-5 ,#card-6 ,#card-7 ,#card-8 ,#card-9 ,#card-10 ,#card-11 ,#card-12 ,#card-13 ,#card-14 ,#card-15 ,#card-16 ,#card-17 ,#card-18 ,#card-19{
+            display: none;
+        }
 }
 
 @media (max-width: 484px){
