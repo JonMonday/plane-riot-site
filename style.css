@@ -479,13 +479,13 @@ nav{
     #top-menu-1 > .links > #tog-games ~ .link-sub{
         display: none;
     }
-    #top-menu-1 > .links >.link-sub.card.visible{
+    #top-menu-1 > .links >.link-sub > .link{
+        background-color: var(--very-light-grey);
+    }
+    #top-menu-1 > .links > .link-sub.visible{
         display: flex;
     }
-    #top-menu-1 > .links >.link-sub.card.visible ~ .link-main{
-        background-color: rebeccapurple;
-    }
-    #top-menu-1 > .links >.link-sub.hidden{
+    #top-menu-1 > .links > .link-sub.hidden{
         display: none;
     }
     #main-cards{
