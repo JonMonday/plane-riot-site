@@ -1,17 +1,30 @@
-const triggers =    [["globe-btn", "globe-icon"],
-                    ["menu-btn","menu-icon","menu-close-icon", "menu-close"],
-                    ["menu-link-1", "menu-link-1-0", "menu-link-icon-1"],
-                    ["menu-link-2", "menu-link-2-0", "menu-link-icon-2"]]
+const triggers =    [["globe-btn", "globe-bg"],
+                    ["menu-btn","menu-icon","w-close", "w-close-bg"],
+                    ["ml1", "mlt1", "mli1"],
+                    ["ml2", "mlt2", "mli2"],
+                    ["logo","logo-1","logo-2","b-close","b-close-bg"],
+                    ["tog-games"],
+                    ["tog-forge"],
+                    ["tog-esports"],
+                    ["tog-entertaiment"],
+                    ["tog-business"],]
+
 const elements =    [["languages-wrapper"],
                     ["menu-cover","menu"],
-                    ["menu-link-1-1", "menu-link-1-2", "menu-link-1-3", "menu-link-icon-1"],
-                    ["menu-link-2-1", "menu-link-2-2", "menu-link-2-3", "menu-link-icon-2"]]
+                    ["mhl1"],
+                    ["mhl2"],
+                    ["left-menu", "left-menu-cover"],
+                    ['cards-1-5'],
+                    ['cards-6-10'],
+                    ['cards-11-12'],
+                    ['cards-13-15'],
+                    ['cards-16-19']]
 
 document.addEventListener("click", (evnt) => {
-
+    console.log(evnt.target)
     for (var i = 0; i < triggers.length; i++) {
         triggers[i].map((value) => {
-            if (value == evnt.target.id) {
+            if (value == evnt.target.id || evnt.target.classList.contains(value)) {
                 handle(elements[i])
             }
         })
@@ -32,14 +45,4 @@ function handle( elements) {
             }
 
 }
-/**
- * 
- *                 if (document.getElementById(elements[i]).classList.contains("") || document.getElementById(elements[i]).classList.contains("hidden")) {
-                    document.getElementById(elements[i]).classList.add("visible");
-                    document.getElementById(elements[i]).classList.remove("hidden");
-                }
-                else if (document.getElementById(elements[i]).classList.contains("visible")) {
-                    document.getElementById(elements[i]).classList.add("hidden");
-                    document.getElementById(elements[i]).classList.remove("visible");
-                }
- */
+
