@@ -8,8 +8,9 @@
     <link rel="stylesheet" href="style.css">
     <title>Home | Riot Games</title>
     <script src="./top-menu.js"></script>
+    <script src="./scroll.js"></script>
 </head>
-<body style="background-color: #111;">
+<body style="background-color: #aaa;">
 
     <nav class="row">
         <div id="nav" class="row">
@@ -19,8 +20,11 @@
                 <div id="top-menu-opp" class="row normal">
                     <div id="top-menu-opp-wrapper" class="row">
                         <div id="logo" class="row cursor">
-                            <div id="logo-img" class="bg-img"></div>
-                            <div id="logo-arrow" class="arrow bg-img"></div>
+                            <div id="logo-img-1" class="logo-img logo-img-w bg-img"></div>
+                            <div id="logo-img-2" class="logo-img logo-img-b bg-img"></div>
+                            <div id="logo-img-3" class="logo-img logo-img-r bg-img"></div>
+                            <div id="logo-arrow-1" class="arrow arrow-g bg-img"></div>
+                            <div id="logo-arrow-2" class="arrow arrow-r bg-img"></div>
                         </div>
                         <div id="top-menu-close" class="close bg-icon cursor"></div>
                     </div>
@@ -32,7 +36,7 @@
                         <div id="top-menu-1">
                             <div class="links">
                                 <a id="tog-games" class="link-main row text text-bold cursor" onclick="topMenuVisiblity('cards-1-5')"> games
-                                    <div class="arrow bg-img"></div>
+                                    <div class="arrow arrow-b bg-img"></div>
                                 </a>
                                 <div class="link-sub col">
                                         <a href="" class="link text text-300" onmouseenter="enter('card-1')" onmouseleave="leave('card-1')">league of legends</a>
@@ -142,7 +146,7 @@
 
                             <div class="links">
                                 <a onclick="topMenuVisiblity('forge-link-sub')" class="link-main row text text-bold cursor">forge
-                                    <div class="arrow bg-img"></div>
+                                    <div class="arrow arrow-b bg-img"></div>
                                 </a>
                                 <div id="forge-link-sub" class="link-sub col hidden">
                                     <a href="" class="link text text-300" onmouseenter="enter('card-6')" onmouseleave="leave('card-6')">hextech mayhem</a>
@@ -159,7 +163,7 @@
 
                             <div class="links">
                                 <a onclick="topMenuVisiblity('esports-link-sub')" class="link-main row text text-bold cursor">esports
-                                    <div class="arrow bg-img"></div>
+                                    <div class="arrow arrow-b bg-img"></div>
                                 </a>
                                 <div id="esports-link-sub" class="link-sub col hidden">
                                         <a href="" class="link text text-300" onmouseenter="enter('card-11')" onmouseleave="leave('card-11')">lol esports</a>
@@ -170,7 +174,7 @@
 
                             <div class="links">
                                 <a onclick="topMenuVisiblity('entert-link-sub')" class="link-main row text text-bold cursor">entertainment
-                                    <div class="arrow bg-img"></div>
+                                    <div class="arrow arrow-b bg-img"></div>
                                 </a>
                                 <div id="entert-link-sub" class="link-sub col hidden">
                                     <a href="" class="link text text-300" onmouseenter="enter('card-13')" onmouseleave="leave('card-13')">arcane</a>
@@ -184,7 +188,7 @@
 
                             <div class="links">
                                 <a onclick="topMenuVisiblity('busi-link-sub')" class="link-main row text text-bold cursor">business
-                                    <div class="arrow bg-img"></div>
+                                    <div class="arrow arrow-b bg-img"></div>
                                 </a>
                                 <div id="busi-link-sub" class="link-sub col hidden">
                                     <a href="" class="link text text-300" onmouseenter="enter('card-16')" onmouseleave="leave('card-16')">riot games</a>
@@ -504,19 +508,180 @@
                             </div>
                         </div>
                     </div>
+                    <div id="top-menu-cover" class="cover"></div>
                 </div>
 
                 <a class="icon bg-img" href=""></a>
 
-
             </div>
 
-            <div id="nav-2">
-
+            <div id="nav-2" class="row">
+                <div id="menu" class="row">
+                    <div class="links col">
+                        <a class="link-main row text text-bold">
+                            <div class="row">
+                                <p>WHO WE ARE</p>
+                                <div class="arrow arrow-g bg-img"></div>
+                                <div class="arrow arrow-w bg-img"></div>
+                            </div>
+                        </a>
+                        <div class="link-sub col">
+                            <div class="banner"></div>
+                            <a class="link text text-300" href="">About Riot</a>
+                            <a class="link text text-300" href="">Diversity & Inclusion</a>
+                            <a class="link text text-300" href="">Social Impact</a>
+                        </div>
+                    </div>
+    
+                    <div class="links col">
+                        <a class="link-main row text text-bold">
+                            <div class="row">
+                                <p>WORK WITH US</p>
+                                <div class="arrow arrow-g bg-img"></div>
+                                <div class="arrow arrow-w bg-img"></div>
+                            </div>
+                        </a>
+                        <div class="link-sub col">
+                            <div class="banner"></div>
+                            <a class="link text text-300" href="">Jobs</a>
+                            <a class="link text text-300" href="">Offices</a>
+                            <a class="link text text-300" href="">Life At Riot</a>
+                        </div>
+                    </div>
+    
+                    <div class="links col">
+                        <a class="link-main row text text-bold">
+                            <div class="row">
+                                <p>NEWS</p>
+                            </div>
+                        </a>
+                        <div class="banner lonely"></div>
+                    </div>
+                </div>
+                <div id="nav-plus" class="row">
+                    <div id="globe-btn" class="i35 cursor">
+                        <div id="globe-bg" class="i16 bg-img"></div>                
+                        <div id="languages-wrapper" class="">
+                            <div id="up-space"></div>
+                            <div id="languages">
+                                <a id="theone" class="language row text text-300" href="#">english
+                                    <div class="check i16 bg-img"></div>
+                                </a>
+                                <a class="language row text text-300" href="#">Indonesian
+                                    <div class="check i16 bg-img"></div>
+                                </a>
+                                <a class="language row text text-300" href="#">Malaysian
+                                    <div class="check i16 bg-img"></div>
+                                </a>
+                                <a class="language row text text-300" href="#">Português
+                                    <div class="check i16 bg-img"></div>
+                                </a>
+                                <a class="language row text text-300" href="#">Čeština
+                                    <div class="check i16 bg-img"></div>
+                                </a>
+                                <a class="language row text text-300" href="#">Français
+                                    <div class="check i16 bg-img"></div>
+                                </a>
+                                <a class="language row text text-300" href="#">Deutsch
+                                    <div class="check i16 bg-img"></div>
+                                </a>
+                                <a class="language row text text-300" href="#">λληνικ
+                                    <div class="check i16 bg-img"></div>
+                                </a>
+                                <a class="language row text text-300" href="#">Magyar
+                                    <div class="check i16 bg-img"></div>
+                                </a>
+                                <a class="language row text text-300" href="#">talian
+                                    <div class="check i16 bg-img"></div>
+                                </a>
+                                <a class="language row text text-300" href="#">t">日本語
+                                    <div class="check i16 bg-img"></div>
+                                </a>
+                                <a class="language row text text-300" href="#">t">한국어
+                                    <div class="check i16 bg-img"></div>
+                                </a>
+                                <a class="language row text text-300" href="#">spañolTAM)
+                                    <div class="check i16 bg-img"></div>
+                                </a>
+                                <a class="language row text text-300" href="#">Polski
+                                    <div class="check i16 bg-img"></div>
+                                </a>
+                                <a class="language row text text-300" href="#">Română
+                                    <div class="check i16 bg-img"></div>
+                                </a>
+                                <a class="language row text text-300" href="#">Русский
+                                    <div class="check i16 bg-img"></div>
+                                </a>
+                                <a class="language row text text-300" href="#">简体中文
+                                    <div class="check i16 bg-img"></div>
+                                </a>
+                                <a class="language row text text-300" href="#">Español (EUW)
+                                    <div class="check i16 bg-img"></div>
+                                </a>
+                                <a class="language row text text-300" href="#">ภาษาไทย
+                                    <div class="check i16 bg-img"></div>
+                                </a>
+                                <a class="language row text text-300" href="#">繁體中文
+                                    <div class="check i16 bg-img"></div>
+                                </a>
+                                <a class="language row text text-300" href="#">Türkçe
+                                    <div class="check i16 bg-img"></div>
+                                </a>
+                                <a class="language row text text-300" href="#">Tiếng Việt
+                                    <div class="check i16 bg-img"></div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div id="search-container">
+                        <form action="">
+                            <label id="search" for="" class="row search">
+                                <input id="search-input" class="text text-300" type="text" placeholder="SEARCH">
+                                <a href="#" id="search-icon" class=" bg-img"></a>
+                            </label>
+                        </form>
+                    </div>
+        
+                    
+                    <a id="signin-btn" class="row text text-300" href="#">SIGN IN</a>
+                </div>
             </div>
 
         </div>
     </nav>
+
+    <main id="content">
+
+        <div id="content-container">
+
+            <div id="content-wrapper">
+
+                <section id="landing">
+
+                    <div id="landing-wrapper">
+
+                    </div>
+
+                </section>
+
+                <section id="whats-happening">
+
+                </section>
+
+                <section id="our-games">
+
+                </section>
+
+                <section id="hiring">
+
+                </section>
+
+            </div>
+
+        </div>
+
+    </main>
 
 </body>
 </html>

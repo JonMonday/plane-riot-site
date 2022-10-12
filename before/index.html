@@ -1,0 +1,1050 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./riot/svg/iconBlack.svg">
+    <link rel="stylesheet" href="style.css">
+    <title>Home | Riot Games</title>
+    <script src="./script.js"></script>
+    <script src="./scroll.js"></script>
+    <script src="./hover.js"></script>
+</head>
+<body style="background-color: #aaaaaa;">
+
+    <nav id="nav" class="row">
+
+        <div id="nav-wrapper" class="row">
+            <div id="nav-left" class="row">
+
+                <div class="logo row cursor" >
+                    <div class="logo-1 logo-1-w bg-img"></div>
+                    <div class="logo-2 logo-2-w bg-img"></div>
+                </div>
+
+                <div id="left-menu" class="hidden">
+                    <div id="polygon"></div>
+                    <div id="left-menu-wrapper">
+                        <div id="left-menu-top" class="row">
+                            <div id="left-menu-top-wrapper" class="row">
+                                <div class="logo row cursor">
+                                    <div class="logo-1 logo-1-d bg-img"></div>
+                                    <div class="logo-2 logo-2-d bg-img"></div>
+                                </div>
+                                <div id="b-close" class="i32-btn cursor">
+                                    <div id="b-close-bg" class="i32-bg bg-img"></div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div id="left-menu-bot" class="row">
+                            <div id="left-menu-bot1">
+                                <ul class="ban-links">
+                                    <li class="row ban-link main cursor">
+                                        <a id="tog-games" class="ban-text">Games</a>
+                                        <img class="link-img" src="./riot/svg/arrowDownBlack.svg" alt="" srcset="">
+                                    </li>
+                                    <li class="ban-link" onmouseenter="enter('card-1')" onmouseleave="leave('card-1')">
+                                        <a href="" class="ban-text">league of legends</a>
+                                    </li>
+                                    <li class="ban-link" onmouseenter="enter('card-2')" onmouseleave="leave('card-2')">
+                                        <a href="" class="ban-text">valorant</a>
+                                    </li>
+                                    <li class="ban-link" onmouseenter="enter('card-3')" onmouseleave="leave('card-3')">
+                                        <a href="" class="ban-text">teamfigh tactics</a>
+                                    </li>
+                                    <li class="ban-link" onmouseenter="enter('card-4')" onmouseleave="leave('card-4')">
+                                        <a href="" class="ban-text">legends of runterra</a>
+                                    </li>
+                                    <li class="ban-link" onmouseenter="enter('card-5')" onmouseleave="leave('card-5')">
+                                        <a href="" class="ban-text">lol: wildrift</a>
+                                    </li>
+                                </ul>
+                                    <div id="cards-1-5" class="cards col hidden">
+                                        <div id="ccard-1" class="card">
+                                            <img class="card-img" src="./riot/card-1.jpeg" alt="" srcset="">
+                                            <div class="card-bg">
+                                                <div class="card-content col">
+                                                    <div class="card-content-logo col">
+                                                        <img src="./riot/lol_logo.png" alt="">
+                                                    </div>
+                                                    <div class="card-content-des ff">
+                                                        <p>Face off in the ultimate 5v5 battle arena</p>
+                                                    </div>
+                                                    <div class="card-content-devices row">
+                                                        <div id="d-windows" class="device bg-img">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div id="ccard-2" class="card">
+                                            <img class="card-img" src="./riot/card-2.jpeg" alt="" srcset="">
+                                            <div class="card-bg">
+                                                <div class="card-content col">
+                                                    <div class="card-content-logo col">
+                                                        <img src="./riot/valorant_logo.png" alt="">
+                                                    </div>
+                                                    <div class="card-content-des ff">
+                                                        <p>Style on your enemies in this 5v5 tactical shooter</p>
+                                                    </div>
+                                                    <div class="card-content-devices row">
+                                                        <div id="d-windows" class="device bg-img">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div id="ccard-3" class="card">
+                                            <img class="card-img" src="./riot/card-3.jpeg" alt="" srcset="">
+                                            <div class="card-bg">
+                                                <div class="card-content col">
+                                                    <div class="card-content-logo col">
+                                                        <img src="./riot/tft_logo.png" alt="">
+                                                    </div>
+                                                    <div class="card-content-des ff">
+                                                        <p>A TEAM-BUILDING BATTLE OF WITS</p>
+                                                    </div>
+                                                    <div class="card-content-devices row">
+                                                        <div id="d-windows" class="device bg-img">
+                                                        </div>
+                                                        <div id="d-mobile" class="device bg-img">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div id="ccard-4" class="card">
+                                            <img class="card-img" src="./riot/card-4.jpeg" alt="" srcset="">
+                                            <div class="card-bg">
+                                                <div class="card-content col">
+                                                    <div class="card-content-logo col">
+                                                        <img src="./riot/legendsofruneterra_logo.png" alt="">
+                                                    </div>
+                                                    <div class="card-content-des ff">
+                                                        <p>Master every moment in this strategy card game</p>
+                                                    </div>
+                                                    <div class="card-content-devices row">
+                                                        <div id="d-windows" class="device bg-img">
+                                                        </div>
+                                                        <div id="d-mobile" class="device bg-img">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div id="ccard-5" class="card">
+                                            <img class="card-img" src="./riot/card-5.jpeg" alt="" srcset="">
+                                            <div class="card-bg">
+                                                <div class="card-content col">
+                                                    <div class="card-content-logo col">
+                                                        <img src="./riot/lolwildrift_logo.png" alt="">
+                                                    </div>
+                                                    <div class="card-content-des ff">
+                                                        <p>LEAGUE OF LEGENDS, NOW ON MOBILE</p>
+                                                    </div>
+                                                    <div class="card-content-devices row">
+                                                        <div id="d-mobile" class="device bg-img">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>         
+                                <ul class="ban-links">
+                                    <li class="row ban-link main cursor">
+                                        <a id="tog-forge" class="ban-text">forge</a>
+                                        <img class="link-img" src="./riot/svg/arrowDownBlack.svg" alt="" srcset="">
+                                    </li>
+                                    <li class="ban-link" onmouseenter="enter('card-6')" onmouseleave="leave('card-6')">
+                                        <a href="" class="ban-text">hextech mayhem</a>
+                                    </li>
+                                    <li class="ban-link" onmouseenter="enter('card-7')" onmouseleave="leave('card-7')">
+                                        <a href="" class="ban-text">runied king</a>
+                                    </li>
+                                    <li class="ban-link" onmouseenter="enter('card-8')" onmouseleave="leave('card-8')">
+                                        <a href="" class="ban-text">conv/rgence</a>
+                                    </li>
+                                    <li class="ban-link" onmouseenter="enter('card-9')" onmouseleave="leave('card-9')">
+                                        <a href="" class="ban-text">songs of nunu</a>
+                                    </li>
+                                    <li  class="ban-link" onmouseenter="enter('card-10')" onmouseleave="leave('card-10')">
+                                        <a href="" class="ban-text">riot forge games</a>
+                                    </li>
+                                </ul>
+                                    <div id="cards-6-10" class="cards col hidden">
+                                        <div id="ccard-6" class="card">
+                                            <img class="card-img" src="./riot/card-6.jpeg" alt="" srcset="">
+                                            <div class="card-bg">
+                                                <div class="card-content col">
+                                                    <div class="card-content-logo col">
+                                                        <img src="./riot/hextechmayhem_logo.png" alt="">
+                                                    </div>
+                                                    <div class="card-content-des ff">
+                                                        <p>Riot Forge Presents Hextech Mayhem</p>
+                                                    </div>
+                                                    <div class="card-content-devices row">
+                                                        <div id="d-windows" class="device bg-img">
+                                                        </div>
+                                                        <div id="d-mobile" class="device bg-img">
+                                                        </div>
+                                                        <div id="d-nintendo" class="device bg-img">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div id="ccard-7" class="card">
+                                            <img class="card-img" src="./riot/card-7.jpeg" alt="" srcset="">
+                                            <div class="card-bg">
+                                                <div class="card-content col">
+                                                    <div class="card-content-logo col">
+                                                        <img src="./riot/ruinedking_logo.png" alt="">
+                                                    </div>
+                                                    <div class="card-content-des ff">
+                                                        <p>RISE AGAINST RUIN IN THIS TURN BASED RPG</p>
+                                                    </div>
+                                                    <div class="card-content-devices row">
+                                                        <div id="d-windows" class="device bg-img">
+                                                        </div>
+                                                        <div id="d-nintendo" class="device bg-img">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div id="ccard-8" class="card">
+                                            <img class="card-img" src="./riot/card-8.jpeg" alt="" srcset="">
+                                            <div class="card-bg">
+                                                <div class="card-content col">
+                                                    <div class="card-content-logo col">
+                                                        <img src="./riot/convrgence_logo.png" alt="">
+                                                    </div>
+                                                    <div class="card-content-des ff">
+                                                        <p>EXPLORE ZAUN AS EKKO IN THIS ACTION PLATFORMER</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div id="ccard-9" class="card">
+                                            <img class="card-img" src="./riot/card-9.jpeg" alt="" srcset="">
+                                            <div class="card-bg">
+                                                <div class="card-content col">
+                                                    <div class="card-content-logo col">
+                                                        <img src="./riot/songofnunu_logo.png" alt="">
+                                                    </div>
+                                                    <div class="card-content-des ff">
+                                                        <p>A Song Lives Forever</p>
+                                                    </div>
+                                                    <div class="card-content-devices row">
+                                                        <div id="d-windows" class="device bg-img">
+                                                        </div>
+                                                        <div id="d-nintendo" class="device bg-img">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>  
+                                <ul class="ban-links">
+                                    <li class="row ban-link main cursor">
+                                        <a id="tog-esports"class="ban-text">esports</a>
+                                        <img class="link-img" src="./riot/svg/arrowDownBlack.svg" alt="" srcset="">
+                                    </li>
+                                    <li class="ban-link" onmouseenter="enter('card-11')" onmouseleave="leave('card-11')">
+                                        <a href="" class="ban-text">lol esports</a>
+                                    </li>
+                                    <li class="ban-link" onmouseenter="enter('card-12')" onmouseleave="leave('card-12')">
+                                        <a href="" class="ban-text">valorant esports</a>
+                                    </li>
+                                </ul>
+                                    <div id="cards-11-12" class="cards col hidden">
+                                        <div id="ccard-11" class="card">
+                                            <img class="card-img" src="./riot/card-11.jpeg" alt="" srcset="">
+                                            <div class="card-bg">
+                                                <div class="card-content col">
+                                                    <div class="card-content-logo col">
+                                                        <img src="./riot/lolesports_logo.svg" alt="">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div id="ccard-12" class="card">
+                                            <img class="card-img" src="./riot/card-12.jpeg" alt="" srcset="">
+                                            <div class="card-bg">
+                                                <div class="card-content col">
+                                                    <div class="card-content-logo col">
+                                                        <img src="./riot/valorantesports_logo.png" alt="">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>  
+                                <ul class="ban-links">
+                                    <li class="row ban-link main cursor">
+                                        <a id="tog-entertaiment" class="ban-text">entertainment</a>
+                                        <img class="link-img" src="./riot/svg/arrowDownBlack.svg" alt="" srcset="">
+                                    </li>
+                                    <li class="ban-link" onmouseenter="enter('card-13')" onmouseleave="leave('card-13')">
+                                        <a href="" class="ban-text">arcane</a>
+                                    </li>
+                                    <li class="ban-link" onmouseenter="enter('card-14')" onmouseleave="leave('card-14')">
+                                        <a href="" class="ban-text">universe</a>
+                                    </li>
+                                    <li class="ban-link" onmouseenter="enter('card-15')" onmouseleave="leave('card-15')">
+                                        <a href="" class="ban-text">riot games music</a>
+                                    </li>
+                                </ul>
+                                    <div id="cards-13-15" class="cards col hidden">
+                                        <div id="ccard-13" class="card">
+                                            <img class="card-img" src="./riot/card-13.jpeg" alt="" srcset="">
+                                            <div class="card-bg">
+                                                <div class="card-content col">
+                                                    <div class="card-content-logo col">
+                                                        <img src="./riot/arcane_logo.svg" alt="">
+                                                    </div>
+                                                    <div class="card-content-des ff">
+                                                        <p>AN ANIMATED SERIES ON NETFLIX FROM THE WORLD OF LEAGUE OF LEGENDS</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div id="ccard-14" class="card">
+                                            <img class="card-img" src="./riot/card-14.jpeg" alt="" srcset="">
+                                            <div class="card-bg">
+                                                <div class="card-content col">
+                                                    <div class="card-content-logo col">
+                                                        <h1 class="ff">universe</h1>
+                                                    </div>
+                                                    <div class="card-content-des ff">
+                                                        <p>THE DEFINITIVE SOURCE FOR THE WORLD OF LEAGUE OF LEGENDS</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div id="ccard-15" class="card">
+                                            <img class="card-img" src="./riot/card-15.jpeg" alt="" srcset="">
+                                            <div class="card-bg">
+                                                <div class="card-content col">
+                                                    <div class="card-content-logo col">
+                                                        <h1 class="ff">riot games music</h1>
+                                                    </div>
+                                                    <div class="card-content-des ff">
+                                                        <p>MUSIC HAS A NEW HOME</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>  
+                                <ul class="ban-links">
+                                    <li class="row ban-link main cursor">
+                                        <a id="tog-business" class="ban-text">business</a>
+                                        <img class="link-img" src="./riot/svg/arrowDownBlack.svg" alt="" srcset="">
+                                    </li>
+                                    <li class="ban-link" onmouseenter="enter('card-16')" onmouseleave="leave('card-16')">
+                                        <a href="" class="ban-text">riot games</a>
+                                    </li>
+                                    <li class="ban-link" onmouseenter="enter('card-17')" onmouseleave="leave('card-17')">
+                                        <a href="" class="ban-text">riot merch</a>
+                                    </li>
+                                    <li class="ban-link" onmouseenter="enter('card-18')" onmouseleave="leave('card-18')">
+                                        <a href="" class="ban-text">riot mobile</a>
+                                    </li>
+                                    <li class="ban-link" onmouseenter="enter('card-19')" onmouseleave="leave('card-19')">
+                                        <a href="" class="ban-text">riot support</a>
+                                    </li>
+                                </ul>
+                                    <div id="cards-16-19" class="cards col hidden">
+                                        <div id="ccard-16" class="card">
+                                            <img class="card-img" src="./riot/card-16.jpeg" alt="" srcset="">
+                                            <div class="card-bg">
+                                                <div class="card-content col">
+                                                    <div class="card-content-logo col">
+                                                        <img src="./riot/svg/logoWhite.svg" alt="">
+                                                    </div>
+                                                    <div class="card-content-des ff">
+                                                        <p>UNLEASH PLAY</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div id="ccard-17" class="card">
+                                            <img class="card-img" src="./riot/card-17.jpeg" alt="" srcset="">
+                                            <div class="card-bg">
+                                                <div class="card-content col">
+                                                    <div class="card-content-logo col">
+                                                        <h1 class="ff">riot merch</h1>
+                                                    </div>
+                                                    <div class="card-content-des ff">
+                                                        <p>THE OFFICIAL HOME OF RIOT GAMES MERCH</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div id="ccard-18" class="card">
+                                            <img class="card-img" src="./riot/riotmobile_card.png" alt="" srcset="">
+                                            <div class="card-bg">
+                                                <div class="card-content col">
+                                                    <div class="card-content-logo col">
+                                                        <h1 class="ff">riot mobile</h1>
+                                                    </div>
+                                                    <div class="card-content-des ff">
+                                                        <p>YOUR MOBILE COMPANION FOR ALL THINGS RIOT GAMES</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div id="ccard-19" class="card">
+                                            <img class="card-img" src="./riot/card-19.jpeg" alt="" srcset="">
+                                            <div class="card-bg">
+                                                <div class="card-content col">
+                                                    <div class="card-content-logo col">
+                                                        <h1 class="ff">riot support</h1>
+                                                    </div>
+                                                    <div class="card-content-des ff">
+                                                        <p>FROM TECH TO TILT, WE’RE HERE TO HELP YOU</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>      
+                            </div>
+                            <div id="left-menu-bot2" class="">
+                                <div id="card-1" class="card">
+                                    <img class="card-img" src="./riot/card-1.jpeg" alt="" srcset="">
+                                    <div class="card-bg">
+                                        <div class="card-content col">
+                                            <div class="card-content-logo col">
+                                                <img src="./riot/lol_logo.png" alt="">
+                                            </div>
+                                            <div class="card-content-des ff">
+                                                <p>Face off in the ultimate 5v5 battle arena</p>
+                                            </div>
+                                            <div class="card-content-devices row">
+                                                <div id="d-windows" class="device bg-img">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="card-2" class="card">
+                                    <img class="card-img" src="./riot/card-2.jpeg" alt="" srcset="">
+                                    <div class="card-bg">
+                                        <div class="card-content col">
+                                            <div class="card-content-logo col">
+                                                <img src="./riot/valorant_logo.png" alt="">
+                                            </div>
+                                            <div class="card-content-des ff">
+                                                <p>Style on your enemies in this 5v5 tactical shooter</p>
+                                            </div>
+                                            <div class="card-content-devices row">
+                                                <div id="d-windows" class="device bg-img">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="card-3" class="card">
+                                    <img class="card-img" src="./riot/card-3.jpeg" alt="" srcset="">
+                                    <div class="card-bg">
+                                        <div class="card-content col">
+                                            <div class="card-content-logo col">
+                                                <img src="./riot/tft_logo.png" alt="">
+                                            </div>
+                                            <div class="card-content-des ff">
+                                                <p>A TEAM-BUILDING BATTLE OF WITS</p>
+                                            </div>
+                                            <div class="card-content-devices row">
+                                                <div id="d-windows" class="device bg-img">
+                                                </div>
+                                                <div id="d-mobile" class="device bg-img">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="card-4" class="card">
+                                    <img class="card-img" src="./riot/card-4.jpeg" alt="" srcset="">
+                                    <div class="card-bg">
+                                        <div class="card-content col">
+                                            <div class="card-content-logo col">
+                                                <img src="./riot/legendsofruneterra_logo.png" alt="">
+                                            </div>
+                                            <div class="card-content-des ff">
+                                                <p>Master every moment in this strategy card game</p>
+                                            </div>
+                                            <div class="card-content-devices row">
+                                                <div id="d-windows" class="device bg-img">
+                                                </div>
+                                                <div id="d-mobile" class="device bg-img">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="card-5" class="card">
+                                    <img class="card-img" src="./riot/card-5.jpeg" alt="" srcset="">
+                                    <div class="card-bg">
+                                        <div class="card-content col">
+                                            <div class="card-content-logo col">
+                                                <img src="./riot/lolwildrift_logo.png" alt="">
+                                            </div>
+                                            <div class="card-content-des ff">
+                                                <p>LEAGUE OF LEGENDS, NOW ON MOBILE</p>
+                                            </div>
+                                            <div class="card-content-devices row">
+                                                <div id="d-mobile" class="device bg-img">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="card-6" class="card">
+                                    <img class="card-img" src="./riot/card-6.jpeg" alt="" srcset="">
+                                    <div class="card-bg">
+                                        <div class="card-content col">
+                                            <div class="card-content-logo col">
+                                                <img src="./riot/hextechmayhem_logo.png" alt="">
+                                            </div>
+                                            <div class="card-content-des ff">
+                                                <p>Riot Forge Presents Hextech Mayhem</p>
+                                            </div>
+                                            <div class="card-content-devices row">
+                                                <div id="d-windows" class="device bg-img">
+                                                </div>
+                                                <div id="d-mobile" class="device bg-img">
+                                                </div>
+                                                <div id="d-nintendo" class="device bg-img">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="card-7" class="card">
+                                    <img class="card-img" src="./riot/card-7.jpeg" alt="" srcset="">
+                                    <div class="card-bg">
+                                        <div class="card-content col">
+                                            <div class="card-content-logo col">
+                                                <img src="./riot/ruinedking_logo.png" alt="">
+                                            </div>
+                                            <div class="card-content-des ff">
+                                                <p>RISE AGAINST RUIN IN THIS TURN BASED RPG</p>
+                                            </div>
+                                            <div class="card-content-devices row">
+                                                <div id="d-windows" class="device bg-img">
+                                                </div>
+                                                <div id="d-nintendo" class="device bg-img">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="card-8" class="card">
+                                    <img class="card-img" src="./riot/card-8.jpeg" alt="" srcset="">
+                                    <div class="card-bg">
+                                        <div class="card-content col">
+                                            <div class="card-content-logo col">
+                                                <img src="./riot/convrgence_logo.png" alt="">
+                                            </div>
+                                            <div class="card-content-des ff">
+                                                <p>EXPLORE ZAUN AS EKKO IN THIS ACTION PLATFORMER</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="card-9" class="card">
+                                    <img class="card-img" src="./riot/card-9.jpeg" alt="" srcset="">
+                                    <div class="card-bg">
+                                        <div class="card-content col">
+                                            <div class="card-content-logo col">
+                                                <img src="./riot/songofnunu_logo.png" alt="">
+                                            </div>
+                                            <div class="card-content-des ff">
+                                                <p>A Song Lives Forever</p>
+                                            </div>
+                                            <div class="card-content-devices row">
+                                                <div id="d-windows" class="device bg-img">
+                                                </div>
+                                                <div id="d-nintendo" class="device bg-img">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="card-10" class="card">
+                                    <img class="card-img" src="./riot/card-10.jpeg" alt="" srcset="">
+                                    <div class="card-bg">
+                                        <div class="card-content col">
+                                            <div class="card-content-logo col">
+                                                <img src="./riot/riotforgegames_logo.svg" alt="">
+                                            </div>
+                                            <div class="card-content-des ff">
+                                                <p>PUBLISHER OF COMPLETABLE EXPERIENCES FROM THE LEAGUE UNIVERSE</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="card-11" class="card">
+                                    <img class="card-img" src="./riot/card-11.jpeg" alt="" srcset="">
+                                    <div class="card-bg">
+                                        <div class="card-content col">
+                                            <div class="card-content-logo col">
+                                                <img src="./riot/lolesports_logo.svg" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="card-12" class="card">
+                                    <img class="card-img" src="./riot/card-12.jpeg" alt="" srcset="">
+                                    <div class="card-bg">
+                                        <div class="card-content col">
+                                            <div class="card-content-logo col">
+                                                <img src="./riot/valorantesports_logo.png" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="card-13" class="card">
+                                    <img class="card-img" src="./riot/card-13.jpeg" alt="" srcset="">
+                                    <div class="card-bg">
+                                        <div class="card-content col">
+                                            <div class="card-content-logo col">
+                                                <img src="./riot/arcane_logo.svg" alt="">
+                                            </div>
+                                            <div class="card-content-des ff">
+                                                <p>AN ANIMATED SERIES ON NETFLIX FROM THE WORLD OF LEAGUE OF LEGENDS</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="card-14" class="card">
+                                    <img class="card-img" src="./riot/card-14.jpeg" alt="" srcset="">
+                                    <div class="card-bg">
+                                        <div class="card-content col">
+                                            <div class="card-content-logo col">
+                                                <h1 class="ff">universe</h1>
+                                            </div>
+                                            <div class="card-content-des ff">
+                                                <p>THE DEFINITIVE SOURCE FOR THE WORLD OF LEAGUE OF LEGENDS</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="card-15" class="card">
+                                    <img class="card-img" src="./riot/card-15.jpeg" alt="" srcset="">
+                                    <div class="card-bg">
+                                        <div class="card-content col">
+                                            <div class="card-content-logo col">
+                                                <h1 class="ff">riot games music</h1>
+                                            </div>
+                                            <div class="card-content-des ff">
+                                                <p>MUSIC HAS A NEW HOME</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="card-16" class="card">
+                                    <img class="card-img" src="./riot/card-16.jpeg" alt="" srcset="">
+                                    <div class="card-bg">
+                                        <div class="card-content col">
+                                            <div class="card-content-logo col">
+                                                <img src="./riot/svg/logoWhite.svg" alt="">
+                                            </div>
+                                            <div class="card-content-des ff">
+                                                <p>UNLEASH PLAY</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="card-17" class="card">
+                                    <img class="card-img" src="./riot/card-17.jpeg" alt="" srcset="">
+                                    <div class="card-bg">
+                                        <div class="card-content col">
+                                            <div class="card-content-logo col">
+                                                <h1 class="ff">riot merch</h1>
+                                            </div>
+                                            <div class="card-content-des ff">
+                                                <p>THE OFFICIAL HOME OF RIOT GAMES MERCH</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="card-18" class="card">
+                                    <img class="card-img" src="./riot/riotmobile_card.png" alt="" srcset="">
+                                    <div class="card-bg">
+                                        <div class="card-content col">
+                                            <div class="card-content-logo col">
+                                                <h1 class="ff">riot mobile</h1>
+                                            </div>
+                                            <div class="card-content-des ff">
+                                                <p>YOUR MOBILE COMPANION FOR ALL THINGS RIOT GAMES</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="card-19" class="card">
+                                    <img class="card-img" src="./riot/card-19.jpeg" alt="" srcset="">
+                                    <div class="card-bg">
+                                        <div class="card-content col">
+                                            <div class="card-content-logo col">
+                                                <h1 class="ff">riot support</h1>
+                                            </div>
+                                            <div class="card-content-des ff">
+                                                <p>FROM TECH TO TILT, WE’RE HERE TO HELP YOU</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div id="ban-main" class="row">
+                                    <div id="main-card-1" class="main-card">
+                                        <a href="">
+                                            <div class="m-c-img">
+                                                <img src="./riot/games1_card.jpeg" alt="" srcset="">
+                                            </div>
+                                            <p class="m-c-text">Explore Uncharted Realms Of The Dragonlands In TFT's Latest Mid-Set!</p>
+                                        </a>
+                                    </div>
+                                    <div id="main-card-2" class="main-card">
+                                        <a href="">
+                                            <div class="m-c-img">
+                                                <img src="./riot/games_card.jpeg" alt="" srcset="">
+                                            </div>
+                                            <p class="m-c-text">There's No Stopping Now - VALORANT Is Kicking Off DIMENSION // ACT II-You In?</p>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+
+                <div id="left-menu-cover" class="cover hidden"></div>
+
+                <div id="nav-links-wrapper" class="row">
+        
+                    <div id="nav-icon" class="icon bg-img"></div>
+        
+                    <div id="nav-links" class="row">
+        
+                        <div class="links row">
+                            <a class="link row cursor">
+                                <p class="link-text ff">WHO WE ARE</p>
+                                <img class="link-img" src="./riot/svg/arrowDownWhite.svg" alt="" srcset="">
+                            </a>
+                            <ul class="hidden-links">
+                                <div class="banner"></div>
+                                <li class="hidden-link">
+                                    <a class="hidden-link-text ff" href="">About Riot</a>
+                                </li>
+                                <li class="hidden-link">
+                                    <a class="hidden-link-text ff" href="">Diversity & Inclusion</a>
+                                </li>
+                                <li class="hidden-link">
+                                    <a class="hidden-link-text ff" href="">Social Impact</a>
+                                </li>
+                            </ul>
+                        </div>
+        
+                        <div class="links row">
+                            <a class="link row cursor">
+                                <p class="link-text ff">WORK WITH US</p>
+                                <img class="link-img" src="./riot/svg/arrowDownWhite.svg" alt="" srcset="">
+                            </a>
+                            <ul class="hidden-links">
+                                <div class="banner"></div>
+                                <li class="hidden-link">
+                                    <a class="hidden-link-text ff" href="">Jobs</a>
+                                </li>
+                                <li class="hidden-link">
+                                    <a class="hidden-link-text ff" href="">Offices</a>
+                                </li>
+                                <li class="hidden-link">
+                                    <a class="hidden-link-text ff" href="">Life At Riot</a>
+                                </li>
+                            </ul>
+                        </div>
+        
+                        <div class="links row">
+                            <a class="link row cursor">
+                                <p class="link-text ff">NEWS</p>
+                            </a>
+                        </div>
+        
+                    </div>
+        
+                </div>
+
+            </div>
+
+            <div id="nav-side-icons" class="row">
+    
+                <div id="globe-btn" class="i32-btn cursor">
+                    <div id="globe-bg" class="i32-bg bg-img"></div>                
+                    <div id="languages-wrapper" class="hidden">
+                        <div id="up-space"></div>
+                        <ul id="languages">
+                            <li class="language">
+                                <a id="theone" class="lang row" href="#">
+                                    <p class="lang-text">english</p>
+                                    <div class="check"></div>
+                                </a>
+                            </li>
+                            <li class="language">
+                                <a class="lang row" href="#">
+                                    <p class="lang-text">Indonesian</p>
+                                    <div class="check"></div>
+                                </a>
+                            </li>
+                            <li class="language">
+                                <a class="lang row" href="#">
+                                    <p class="lang-text">Malaysian</p>
+                                    <div class="check"></div>
+                                </a>
+                            </li>
+                            <li class="language">
+                                <a class="lang row" href="#">
+                                    <p class="lang-text">Português</p>
+                                    <div class="check"></div>
+                                </a>
+                            </li>
+                            <li class="language">
+                                <a class="lang row" href="#">
+                                    <p class="lang-text">Čeština</p>
+                                    <div class="check"></div>
+                                </a>
+                            </li>
+                            <li class="language">
+                                <a class="lang row" href="#">
+                                    <p class="lang-text">Français</p>
+                                    <div class="check"></div>
+                                </a>
+                            </li>
+                            <li class="language">
+                                <a class="lang row" href="#">
+                                    <p class="lang-text">Deutsch</p>
+                                    <div class="check"></div>
+                                </a>
+                                
+                            </li>
+                            <li class="language">
+                                <a class="lang row" href="#">
+                                    <p class="lang-text">Ελληνικά</p>
+                                    <div class="check"></div>
+                                </a>
+                            </li>
+                            <li class="language">
+                                <a class="lang row" href="#">
+                                    <p class="lang-text">Magyar</p>
+                                    <div class="check"></div>
+                                </a>
+                            </li>
+                            <li class="language">
+                                <a class="lang row" href="#">
+                                    <p class="lang-text">Italiano</p>
+                                    <div class="check"></div>
+                                </a>
+                            </li>
+                            <li class="language">
+                                <a class="lang row" href="#">
+                                    <p class="lang-text">日本語</p>
+                                    <div class="check"></div>
+                                </a>
+                            </li>
+                            <li class="language">
+                                <a class="lang row" href="#">
+                                    <p class="lang-text">한국어</p>
+                                    <div class="check"></div>
+                                </a>
+                            </li>
+                            <li class="language">
+                                <a class="lang row" href="#">
+                                    <p class="lang-text">Español (LATAM)</p>
+                                    <div class="check"></div>
+                                </a>
+                            </li>
+                            <li class="language">
+                                <a class="lang row" href="#">
+                                    <p class="lang-text">Polski</p>
+                                    <div class="check"></div>
+                                </a>
+                            </li>
+                            <li class="language">
+                                <a class="lang row" href="#">
+                                    <p class="lang-text">Română</p>
+                                    <div class="check"></div>
+                                </a>
+                            </li>
+                            <li class="language">
+                                <a class="lang row" href="#">
+                                    <p class="lang-text">Русский</p>
+                                    <div class="check"></div>
+                                </a>
+                            </li>
+                            <li class="language">
+                                <a class="lang row" href="#">
+                                    <p class="lang-text">简体中文</p>
+                                    <div class="check"></div>
+                                </a>
+                            </li>
+                            <li class="language">
+                                <a class="lang row" href="#">
+                                    <p class="lang-text">Español (EUW)</p>
+                                    <div class="check"></div>
+                                </a>
+                            </li>
+                            <li class="language">
+                                <a class="lang row" href="#">
+                                    <p class="lang-text">ภาษาไทย</p>
+                                    <div class="check"></div>
+                                </a>
+                            </li>
+                            <li class="language">
+                                <a class="lang row" href="#">
+                                    <p class="lang-text">繁體中文</p>
+                                    <div class="check"></div>
+                                </a>
+                            </li>
+                            <li class="language">
+                                <a class="lang row" href="#">
+                                    <p class="lang-text">Türkçe</p>
+                                    <div class="check"></div>
+                                </a>
+                            </li>
+                            <li class="language">
+                                <a class="lang row" href="#">
+                                    <p class="lang-text">Tiếng Việt</p>
+                                    <div class="check"></div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div id="nav-search-container">
+                    <form action="">
+                        <label id="nav-search" for="" class="row search">
+                            <input id="nav-search-input" class="search-input" type="text" placeholder="SEARCH">
+                            <a href="#" id="nav-search-icon" class="search-icon bg-img"></a>
+                        </label>
+                    </form>
+                </div>
+    
+                <div id="nav-signin">
+                    <a id="nav-signin-btn" class="signin" href="#">SIGN IN</a>
+                </div>
+
+                <div id="menu-btn" class="i32-btn cursor">
+                    <div id="menu-icon" class="i32-bg bg-img"></div>
+                    <div id="menu" class="hidden">
+                        <div id="menu-top" class="row">
+                            <div class="icon bg-img"></div>
+                            <div id="w-close" class="i32-btn cursor">
+                                <div id="w-close-bg" class="i32-bg bg-img"></div>
+                            </div>
+                        </div>
+                        <div id="menu-mid"  class="col">
+                            <div id="menu-search">
+                                <form action="">
+                                    <label id="nav-search" for="" class="row search">
+                                        <input id="nav-search-input" class="search-input" type="text" placeholder="SEARCH">
+                                        <a href="#" id="nav-search-icon" class="search-icon bg-img"></a>
+                                    </label>
+                                </form>
+                            </div>
+                            <div id="menu-links" class="col">
+        
+                                <div class="links col">
+                                    <a class="ml1 link row cursor">
+                                        <p class="mlt1 link-text ff">WHO WE ARE</p>
+                                        <img class="mli1 link-img" src="./riot/svg/arrowDownWhite.svg" alt="" srcset="">
+                                    </a>
+                                    <ul id="mhl1" class="hidden-links hidden">
+                                        <div class="banner"></div>
+                                        <li class="hidden-link">
+                                            <a class="hidden-link-text ff" href="">About Riot</a>
+                                        </li>
+                                        <li class="hidden-link">
+                                            <a class="hidden-link-text ff" href="">Diversity & Inclusion</a>
+                                        </li>
+                                        <li class="hidden-link">
+                                            <a class="hidden-link-text ff" href="">Social Impact</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                
+                                <div class="links col">
+                                    <a class="ml2 link row cursor">
+                                        <p class="mlt2 link-text ff">WORK WITH US</p>
+                                        <img class="mli2 link-img" src="./riot/svg/arrowDownWhite.svg" alt="" srcset="">
+                                    </a>
+                                    <ul id="mhl2" class="hidden-links hidden">
+                                        <div class="banner"></div>
+                                        <li class="hidden-link">
+                                            <a class="hidden-link-text ff" href="">Jobs</a>
+                                        </li>
+                                        <li class="hidden-link">
+                                            <a class="hidden-link-text ff" href="">Offices</a>
+                                        </li>
+                                        <li class="hidden-link">
+                                            <a class="hidden-link-text ff" href="">Life At Riot</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                
+                                <div class="links col">
+                                    <a class="link row cursor">
+                                        <p class="link-text ff">NEWS</p>
+                                    </a>
+                                </div>
+                
+                            </div>
+                        </div>
+                        <div id="menu-signin">
+                            <a id="menu-signin-btn" class="signin" href="#">SIGN IN</a>
+                        </div>
+                    </div>
+                    <div id="menu-cover" class="cover hidden"></div>
+                </div>
+    
+            </div>
+        </div>
+
+    </nav>
+
+    <main id="content">
+
+        <div id="content-container">
+
+            <div id="content-wrapper">
+
+                <section id="landing">
+
+                    <div id="landing-wrapper">
+
+                    </div>
+
+                </section>
+
+                <section id="whats-happening">
+
+                </section>
+
+                <section id="our-games">
+
+                </section>
+
+                <section id="hiring">
+
+                </section>
+
+            </div>
+
+        </div>
+
+    </main>
+    
+</body>
+</html>

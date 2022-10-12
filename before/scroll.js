@@ -1,5 +1,5 @@
 document.addEventListener( "scroll" , (evnt) => {
-    let nav = document.querySelector("nav")
+    let nav = document.getElementById("nav")
     let position = window.scrollY;
     
     if (position > 70) {

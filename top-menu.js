@@ -1,19 +1,29 @@
-const triggers = ['logo-img', 'logo-arrow', 'top-menu-close']
-
+const triggers = [['logo-img', 'logo-arrow', 'top-menu-close'],
+                    ["globe-btn", "globe-bg"]]
+const elements =  [["top-menu-opp"],
+                    ["globe-btn"],]
 document.addEventListener("click", (evnt) => {
-    triggers.map((value) => {
-        if (value == evnt.target.id || evnt.target.classList.contains(value)) {
-            const topMenuOpp = document.getElementById('top-menu-opp')
-            if(topMenuOpp.classList.contains('normal')){
-                topMenuOpp.classList.remove('normal')
+    for (var i = 0; i < triggers.length; i++) {
+        triggers[i].map((value) => {
+            if (value == evnt.target.id || evnt.target.classList.contains(value)) {
+                handle(elements[i])
             }
-            else{
-                topMenuOpp.classList.add('normal')
-            }
-        }
-    })
+        })
+    }
     
 });
+
+function handle( elements) {
+    for (var i = 0; i < elements.length; i++){
+        if (document.getElementById(elements[i]).classList.contains("normal")) {
+            document.getElementById(elements[i]).classList.remove("normal");
+        }
+        else if (!document.getElementById(elements[i]).classList.contains("normal")) {
+            document.getElementById(elements[i]).classList.add("normal");
+        }
+    }
+
+}
 
 function enter(card){
     const cardDiv = document.getElementById(card)
