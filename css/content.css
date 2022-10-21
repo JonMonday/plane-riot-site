@@ -69,7 +69,7 @@ main{
             height: 50px;
             border-radius: 25px;
             background-color: var(--black-bg);
-            background-image: url('../assets/globe.svg');
+            background-image: url('../assets/arrow-right.svg');
         }
 
 #whats-happening{
