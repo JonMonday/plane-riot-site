@@ -5,28 +5,28 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="./assets/iconBlack.svg">
-    <link rel="stylesheet" href="style.css">
     <title>Home | Riot Games</title>
-    <script src="./top-menu.js"></script>
-    <script src="./scroll.js"></script>
+    <link rel="stylesheet" href="./css/index.css">
+    <script src="./js/scroll.js"></script>
+    <script src="./js/nav.js"></script>
+    <script src="./js/main.js"></script>
 </head>
-<body style="background-color: #aaa;">
+<body>
 
     <nav class="row">
         <div id="nav" class="row">
-
             <div id="nav-1" class="row">
 
                 <div id="top-menu-opp" class="row normal">
                     <div id="top-menu-opp-wrapper" class="row">
-                        <div id="logo" class="row cursor">
+                        <div onclick="topMenu()" id="logo" class="row cursor">
                             <div id="logo-img-1" class="logo-img logo-img-w bg-img"></div>
                             <div id="logo-img-2" class="logo-img logo-img-b bg-img"></div>
                             <div id="logo-img-3" class="logo-img logo-img-r bg-img"></div>
                             <div id="logo-arrow-1" class="arrow arrow-g bg-img"></div>
                             <div id="logo-arrow-2" class="arrow arrow-r bg-img"></div>
                         </div>
-                        <div id="top-menu-close" class="close bg-icon cursor"></div>
+                        <div onclick="topMenu()" id="top-menu-close" class="close i35 bg-icon cursor"></div>
                     </div>
                 </div>
 
@@ -37,6 +37,7 @@
                             <div class="links">
                                 <a id="tog-games" class="link-main row text text-bold cursor" onclick="topMenuVisiblity('cards-1-5')"> games
                                     <div class="arrow arrow-b bg-img"></div>
+                                    <div class="arrow arrow-w bg-img"></div>
                                 </a>
                                 <div class="link-sub col">
                                         <a href="" class="link text text-300" onmouseenter="enter('card-1')" onmouseleave="leave('card-1')">league of legends</a>
@@ -147,6 +148,7 @@
                             <div class="links">
                                 <a onclick="topMenuVisiblity('forge-link-sub')" class="link-main row text text-bold cursor">forge
                                     <div class="arrow arrow-b bg-img"></div>
+                                    <div class="arrow arrow-w bg-img"></div>
                                 </a>
                                 <div id="forge-link-sub" class="link-sub col hidden">
                                     <a href="" class="link text text-300" onmouseenter="enter('card-6')" onmouseleave="leave('card-6')">hextech mayhem</a>
@@ -164,6 +166,7 @@
                             <div class="links">
                                 <a onclick="topMenuVisiblity('esports-link-sub')" class="link-main row text text-bold cursor">esports
                                     <div class="arrow arrow-b bg-img"></div>
+                                    <div class="arrow arrow-w bg-img"></div>
                                 </a>
                                 <div id="esports-link-sub" class="link-sub col hidden">
                                         <a href="" class="link text text-300" onmouseenter="enter('card-11')" onmouseleave="leave('card-11')">lol esports</a>
@@ -175,6 +178,7 @@
                             <div class="links">
                                 <a onclick="topMenuVisiblity('entert-link-sub')" class="link-main row text text-bold cursor">entertainment
                                     <div class="arrow arrow-b bg-img"></div>
+                                    <div class="arrow arrow-w bg-img"></div>
                                 </a>
                                 <div id="entert-link-sub" class="link-sub col hidden">
                                     <a href="" class="link text text-300" onmouseenter="enter('card-13')" onmouseleave="leave('card-13')">arcane</a>
@@ -189,6 +193,7 @@
                             <div class="links">
                                 <a onclick="topMenuVisiblity('busi-link-sub')" class="link-main row text text-bold cursor">business
                                     <div class="arrow arrow-b bg-img"></div>
+                                    <div class="arrow arrow-w bg-img"></div>
                                 </a>
                                 <div id="busi-link-sub" class="link-sub col hidden">
                                     <a href="" class="link text text-300" onmouseenter="enter('card-16')" onmouseleave="leave('card-16')">riot games</a>
@@ -463,7 +468,7 @@
                                 </div>
                             </div>
                             <div id="card-18" class="card">
-                                <img class="card-img" src="./assets/riotmobile_card.png" alt="" srcset="">
+                                <img class="card-img" src="./assets/card-18.jpeg" alt="" srcset="">
                                 <div class="card-bg">
                                     <div class="card-content col">
                                         <div class="card-content-logo col">
@@ -511,14 +516,19 @@
                     <div id="top-menu-cover" class="cover"></div>
                 </div>
 
-                <a class="icon bg-img" href=""></a>
+                <a class="icon icon-w bg-img" href=""></a>
 
             </div>
 
             <div id="nav-2" class="row">
+                <div id="burger-wrapper" class="row">
+                    <a class="icon icon-w bg-img " href=""></a>
+                    <div id="burger" class="i35 bg-img" onclick="burger()"> </div> 
+                </div>
+
                 <div id="menu" class="row">
-                    <div class="links col">
-                        <a class="link-main row text text-bold">
+                    <div id="links-1" class="links col">
+                        <a onclick="menuMobile('links-1')" class="link-main row text text-bold">
                             <div class="row">
                                 <p>WHO WE ARE</p>
                                 <div class="arrow arrow-g bg-img"></div>
@@ -533,8 +543,8 @@
                         </div>
                     </div>
     
-                    <div class="links col">
-                        <a class="link-main row text text-bold">
+                    <div id="links-2" class="links col">
+                        <a onclick="menuMobile('links-2')" class="link-main row text text-bold">
                             <div class="row">
                                 <p>WORK WITH US</p>
                                 <div class="arrow arrow-g bg-img"></div>
@@ -549,8 +559,8 @@
                         </div>
                     </div>
     
-                    <div class="links col">
-                        <a class="link-main row text text-bold">
+                    <div id="links-3" class="links col">
+                        <a onclick="menuMobile('links-3')" class="link-main row text text-bold">
                             <div class="row">
                                 <p>NEWS</p>
                             </div>
@@ -558,77 +568,78 @@
                         <div class="banner lonely"></div>
                     </div>
                 </div>
+
                 <div id="nav-plus" class="row">
-                    <div id="globe-btn" class="i35 cursor">
-                        <div id="globe-bg" class="i16 bg-img"></div>                
+                    <div id="globe-btn" class="i35 ">
+                        <div onclick="globe()" id="globe-bg" class="i16 bg-img cursor"></div>                
                         <div id="languages-wrapper" class="">
                             <div id="up-space"></div>
                             <div id="languages">
                                 <a id="theone" class="language row text text-300" href="#">english
-                                    <div class="check i16 bg-img"></div>
+                                    <div class="check bg-img"></div>
                                 </a>
                                 <a class="language row text text-300" href="#">Indonesian
-                                    <div class="check i16 bg-img"></div>
+                                    <div class="check bg-img"></div>
                                 </a>
                                 <a class="language row text text-300" href="#">Malaysian
-                                    <div class="check i16 bg-img"></div>
+                                    <div class="check bg-img"></div>
                                 </a>
                                 <a class="language row text text-300" href="#">Português
-                                    <div class="check i16 bg-img"></div>
+                                    <div class="check bg-img"></div>
                                 </a>
                                 <a class="language row text text-300" href="#">Čeština
-                                    <div class="check i16 bg-img"></div>
+                                    <div class="check bg-img"></div>
                                 </a>
                                 <a class="language row text text-300" href="#">Français
-                                    <div class="check i16 bg-img"></div>
+                                    <div class="check bg-img"></div>
                                 </a>
                                 <a class="language row text text-300" href="#">Deutsch
-                                    <div class="check i16 bg-img"></div>
+                                    <div class="check bg-img"></div>
                                 </a>
                                 <a class="language row text text-300" href="#">λληνικ
-                                    <div class="check i16 bg-img"></div>
+                                    <div class="check bg-img"></div>
                                 </a>
                                 <a class="language row text text-300" href="#">Magyar
-                                    <div class="check i16 bg-img"></div>
+                                    <div class="check bg-img"></div>
                                 </a>
                                 <a class="language row text text-300" href="#">talian
-                                    <div class="check i16 bg-img"></div>
+                                    <div class="check bg-img"></div>
                                 </a>
                                 <a class="language row text text-300" href="#">t">日本語
-                                    <div class="check i16 bg-img"></div>
+                                    <div class="check bg-img"></div>
                                 </a>
                                 <a class="language row text text-300" href="#">t">한국어
-                                    <div class="check i16 bg-img"></div>
+                                    <div class="check bg-img"></div>
                                 </a>
                                 <a class="language row text text-300" href="#">spañolTAM)
-                                    <div class="check i16 bg-img"></div>
+                                    <div class="check bg-img"></div>
                                 </a>
                                 <a class="language row text text-300" href="#">Polski
-                                    <div class="check i16 bg-img"></div>
+                                    <div class="check bg-img"></div>
                                 </a>
                                 <a class="language row text text-300" href="#">Română
-                                    <div class="check i16 bg-img"></div>
+                                    <div class="check bg-img"></div>
                                 </a>
                                 <a class="language row text text-300" href="#">Русский
-                                    <div class="check i16 bg-img"></div>
+                                    <div class="check bg-img"></div>
                                 </a>
                                 <a class="language row text text-300" href="#">简体中文
-                                    <div class="check i16 bg-img"></div>
+                                    <div class="check bg-img"></div>
                                 </a>
                                 <a class="language row text text-300" href="#">Español (EUW)
-                                    <div class="check i16 bg-img"></div>
+                                    <div class="check bg-img"></div>
                                 </a>
                                 <a class="language row text text-300" href="#">ภาษาไทย
-                                    <div class="check i16 bg-img"></div>
+                                    <div class="check bg-img"></div>
                                 </a>
                                 <a class="language row text text-300" href="#">繁體中文
-                                    <div class="check i16 bg-img"></div>
+                                    <div class="check bg-img"></div>
                                 </a>
                                 <a class="language row text text-300" href="#">Türkçe
-                                    <div class="check i16 bg-img"></div>
+                                    <div class="check bg-img"></div>
                                 </a>
                                 <a class="language row text text-300" href="#">Tiếng Việt
-                                    <div class="check i16 bg-img"></div>
+                                    <div class="check bg-img"></div>
                                 </a>
                             </div>
                         </div>
@@ -643,45 +654,332 @@
                         </form>
                     </div>
         
-                    
                     <a id="signin-btn" class="row text text-300" href="#">SIGN IN</a>
                 </div>
             </div>
 
+            <div id="nav-2-cover" class="cover"></div>
         </div>
     </nav>
 
-    <main id="content">
-
-        <div id="content-container">
-
-            <div id="content-wrapper">
-
-                <section id="landing">
-
-                    <div id="landing-wrapper">
-
+    <main class="col">
+        <section id="landing" class="col bg-img">
+            <div id="landing-wrapper" class="col">
+                <img id="hero-img" src="./assets/w22_logo.png" alt="" srcset="">
+                <h2 id="hero-text" class="text text-header"> the battle for the summoner's cup starts now</h2>
+                <h3 id="hero-p" class="text h3-text">don't miss a second of the action at LoLEsports.com</h3>
+                <a id="watch-btn" href="">
+                    <div class="bg-icon"></div>
+                    <h2 class="text">watch now</h2>
+                </a>
+            </div>
+        </section>
+        <div class="col">
+            <section id="whats-happening" class="col">
+                <div id="whats-happening-wrapper" class="col">
+                    <div id="wh" class="col">
+                        <header id="wh-header" class="art-header row">
+                            <h1 id="wh-text" class="art-header-text text text-header">what's happening?</h1>
+                            <a class="seemore seemore1 text text-bold" href="">see more</a>
+                        </header>
+                        <div id="articles" class="row">
+                            <div id="main-article" class="" onmouseenter="enterArt('main-article')" onmouseleave="leaveArt('main-article')">
+                                <a href="" class="bg-img col">
+                                    <div id="art-main-icon" class="icon-xl icon-b bg-img" href=""></div>
+                                    <div>
+                                        <h2 class="text h2-text">more than a label: priscila queiroz</h2>
+                                        <h4 class="text h4-text">Inside riot</h4>
+                                    </div>
+                                </a>
+                            </div>
+                            <div id="side-article" class="col">
+                                <div id="art-0" class="article" onmouseenter="enterArt('art-0')" onmouseleave="leaveArt('art-0')">
+                                    <a href="" class="row">
+                                        <img class="article-img" src="./assets/disciplines.png" alt="" srcset="">
+                                        <div class=" art-icon icon-xl icon-v bg-img" href=""></div>
+                                        <div class="article-cont col">
+                                            <h3 class="text h3-text"> five tips and tricks to help you join the valorant team</h3>
+                                            <h4 class="text h4-text"> disciplines</h4>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div id="art-1" class="article" onmouseenter="enterArt('art-1')" onmouseleave="leaveArt('art-1')">
+                                    <a href="" class="row">
+                                        <img class="article-img" src="./assets/valarticle.png" alt="" srcset="">
+                                        <div class=" art-icon icon-xl icon-v bg-img" href=""></div>
+                                        <div class="article-cont col">
+                                            <h3 class="text h3-text"> q and a with some of our VALORANT leaders</h3>
+                                            <h4 class="text h4-text">inside riot</h4>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div id="art-2" class="article" onmouseenter="enterArt('art-2')" onmouseleave="leaveArt('art-2')">
+                                    <a href="" class="row">
+                                        <img class="article-img" src="./assets/news.png" alt="" srcset="">
+                                        <div class=" art-icon icon-xl icon-b bg-img" href=""></div>
+                                        <div class="article-cont col">
+                                            <h3 class="text h3-text"> lil nas x becomes president of league of legends</h3>
+                                            <h4 class="text h4-text">news</h4>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div id="art-3" class="article" onmouseenter="enterArt('art-3')" onmouseleave="leaveArt('art-3')">
+                                    <a href="" class="row">
+                                        <img class="article-img" src="./assets/insideriot2.png" alt="" srcset="">
+                                        <div class=" art-icon icon-xl icon-b bg-img" href=""></div>
+                                        <div class="article-cont col">
+                                            <h3 class="text h3-text"> global service month 2022: from sao paula to shanghai</h3>
+                                            <h4 class="text h4-text">inside riot</h4>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <a class="seemore seemore2 text text-bold" href="">see more</a>
                     </div>
+                </div>
+            </section>
 
-                </section>
+            <section id="our-games" class="col">
+                <div id="og" class="col">
+                    <header class="art-header row">
+                        <h1 class="art-header-text text text-header">our games</h1>
+                        <a class="seemore seemore1 text text-bold" href="">see more</a>
+                    </header>
+                    <div id="games" class="col">
+                        <div id="games-main" class="row">
 
-                <section id="whats-happening">
+                            <div id="game-1" class="game main" onmouseenter="enterArt('game-1')" onmouseleave="leaveArt('game-1')">
+                                <a href="" class="game-cont">
+                                    <img class="game-img" src="./assets/card-1.jpeg" alt="" srcset="">
+                                    <div class="game-bg">
+                                        <div class="game-content col">
+                                            <div class="game-content-logo col">
+                                                <img src="./assets/lol_logo.png" alt="">
+                                            </div>
+                                            <div class="game-content-devices row">
+                                                <div id="d-windows" class="device bg-img">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
 
-                </section>
+                            <div id="game-2" class="game main" onmouseenter="enterArt('game-2')" onmouseleave="leaveArt('game-2')">
+                                <a href="" class="game-cont">
+                                    <img class="game-img" src="./assets/card-2.jpeg" alt="" srcset="">
+                                    <div class="game-bg">
+                                        <div class="game-content col">
+                                            <div class="game-content-logo col">
+                                                <img src="./assets/valorant_logo.png" alt="">
+                                            </div>
+                                            <div class="game-content-devices row">
+                                                <div id="d-windows" class="device bg-img">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            
+                        </div>
+                        <div id="games-sub" class="row">
+                            <div id="game-3" class="game sub" onmouseenter="enterArt('game-3')" onmouseleave="leaveArt('game-3')">
+                                <a href="" class="game-cont">
+                                    <img class="game-img" src="./assets/card-3.jpeg" alt="" srcset="">
+                                    <div class="game-bg">
+                                        <div class="game-content col">
+                                            <div class="game-content-logo col">
+                                                <img src="./assets/tft_logo.png" alt="">
+                                            </div>
+                                            <div class="game-content-devices row">
+                                                <div id="d-windows" class="device bg-img">
+                                                </div>
+                                                <div id="d-mobile" class="device bg-img">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div id="game-4" class="game sub" onmouseenter="enterArt('game-4')" onmouseleave="leaveArt('game-4')">
+                                <a href="" class="game-cont">
+                                    <img class="game-img" src="./assets/card-5.jpeg" alt="" srcset="">
+                                    <div class="game-bg">
+                                        <div class="game-content col">
+                                            <div class="game-content-logo col">
+                                                <img src="./assets/lolwildrift_logo.png" alt="">
+                                            </div>
+                                            <div class="game-content-devices row">
+                                                <div id="d-mobile" class="device bg-img">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div id="game-5" class="game sub" onmouseenter="enterArt('game-5')" onmouseleave="leaveArt('game-5')">
+                                <a href="" class="game-cont">
+                                    <img class="game-img" src="./assets/card-4.jpeg" alt="" srcset="">
+                                    <div class="game-bg">
+                                        <div class="game-content col">
+                                            <div class="game-content-logo col">
+                                                <img src="./assets/legendsofruneterra_logo.png" alt="">
+                                            </div>
+                                            <div class="game-content-devices row">
+                                                <div id="d-windows" class="device bg-img">
+                                                </div>
+                                                <div id="d-mobile" class="device bg-img">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div id="game-6" class="game sub" onmouseenter="enterArt('game-6')" onmouseleave="leaveArt('game-6')">
+                                <a href="" class="game-cont">
+                                    <img class="game-img" src="./assets/card-7.jpeg" alt="" srcset="">
+                                    <div class="game-bg">
+                                        <div class="game-content col">
+                                            <div class="game-content-logo col">
+                                                <img src="./assets/ruinedking_logo.png" alt="">
+                                            </div>
+                                            <div class="card-content-devices row">
+                                                <div id="d-windows" class="device bg-img">
+                                                </div>
+                                                <div id="d-nintendo" class="device bg-img">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div id="game-7" class="game sub" onmouseenter="enterArt('game-7')" onmouseleave="leaveArt('game-7')">
+                                <a href="" class="game-cont">
+                                    <img class="game-img" src="./assets/card-6.jpeg" alt="" srcset="">
+                                    <div class="game-bg">
+                                        <div class="game-content col">
+                                            <div class="game-content-logo col">
+                                                <img src="./assets/hextechmayhem_logo.png" alt="">
+                                            </div>
+                                            <div class="game-content-devices row">
+                                                <div id="d-windows" class="device bg-img">
+                                                </div>
+                                                <div id="d-mobile" class="device bg-img">
+                                                </div>
+                                                <div id="d-nintendo" class="device bg-img">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div id="game-8" class="game sub" onmouseenter="enterArt('game-8')" onmouseleave="leaveArt('game-8')">
+                                <a href="" class="game-cont">
+                                    <img class="game-img" src="./assets/card-8.jpeg" alt="" srcset="">
+                                    <div class="game-bg">
+                                        <div class="game-content col">
+                                            <div class="game-content-logo col">
+                                                <img src="./assets/convrgence_logo.png" alt="">
+                                            </div>
+                                            <div class="game-content-devices row">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div id="game-9" class="game sub" onmouseenter="enterArt('game-9')" onmouseleave="leaveArt('game-9')">
+                                <a href="" class="game-cont">
+                                    <img class="game-img" src="./assets/card-9.jpeg" alt="" srcset="">
+                                    <div class="game-bg">
+                                        <div class="game-content col">
+                                            <div class="game-content-logo col">
+                                                <img src="./assets/songofnunu_logo.png" alt="">
+                                            </div>
+                                            <div class="game-content-devices row">
+                                                <div id="d-windows" class="device bg-img">
+                                                </div>
+                                                <div id="d-nintendo" class="device bg-img">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <a class="seemore seemore2 text text-bold" href="">see more</a>
+                </div>
+            </section>
 
-                <section id="our-games">
+            <section id="hiring" class="row">
+                <div id="hiring-cont" class="col">
+                    <div class="col">
+                        <h2 class="art-header-text text text-header">We’re hiring!</h2>
+                        <p class="text h3-text">Team up with Riot to forge your path and craft unforgettable experiences for players</p>
+                        <div id="hiring-fig" class="row">
+                            <a href="" id="hiring-fig1" class="col">
+                                <h2 class="text text-header">432</h2>
+                                <p class="text h3-text">open positions</p>
+                            </a>
+                            <a href="" id="hiring-fig2" class="col">
+                                <h2 class="text text-header">24</h2>
+                                <p class="text h3-text">offices</p>
+                            </a>
+                        </div>
+                        <a href="" class="text">
+                            Explore Careers
+                        </a>
+                    </div>
+                </div>
+                <div id="hiring-img">
 
-                </section>
+                </div>
+            </section> 
+        </div>
+    </main>
+    <footer class="row">
+        <div id="footer-wrapper" class="col">
 
-                <section id="hiring">
+            <div id="footer-links" class="row">
+                <a href="" class="fist bg-img"></a>
+                <div id="fot-links" class="row">
+                    <a href="" class="fot-link text">press</a>
+                    <a href="" class="fot-link text">security</a>
+                    <a href="" class="fot-link text">legal</a>
+                    <a href="" class="fot-link text">leadership</a>
+                    <a href="" class="fot-link text">candidate privacy</a>
+                    <a href="" class="fot-link text">terms of service</a>
+                    <a href="" class="fot-link text">privacy notice</a>
+                    <a href="" class="fot-link text">player support</a>
+                    <a href="" class="fot-link text">e-verify</a>
+                    <a href="" class="fot-link text">accessibilty</a>
+                </div>
+                <div class="row">
+                    <a href="" class="social fb bg-icon"></a>
+                    <a href="" class="social tww bg-icon"></a>
+                    <a href="" class="social lkdn bg-icon"></a>
+                    <a href="" class="social yt bg-icon"></a>
+                </div>
+            </div>
 
-                </section>
+            <div id="border"></div>
 
+            <div id="copyright" class="row">
+                <div>
+                    <p class="text h3-text">© 2022 Riot Games, Inc. All Rights Reserved.cloned</p>
+                </div>
+                <div>
+                    <a id="goToTop" href="" class="row text h3-text">to the surface
+                        <div class="arrow arrow-g bg-img"></div>
+                        <div class="arrow arrow-r bg-img"></div>
+                    </a>
+                </div>
             </div>
 
         </div>
-
-    </main>
-
+    </footer>
 </body>
 </html>

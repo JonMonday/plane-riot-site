@@ -1,0 +1,63 @@
+@keyframes jelly {
+    0%,
+    100% {
+    transform: scale(1, 1);
+    }
+    30% {
+    transform: scale(1.1, 0.9);
+    }
+    40% {
+    transform: scale(0.8, 1.2);
+    }
+    50% {
+    transform: scale(1.1, 0.9);
+    }
+    65% {
+    transform: scale(0.9, 1);
+    }
+    75% {
+    transform: scale(1, 0.9);
+    }
+}
+
+@keyframes blink {
+    0% {
+        background-color: var(--opaque-1);
+    }
+    50%{
+        background-color: var(--opaque-2);
+    }
+    100% {
+        background-color: var(--opaque-1);
+    }
+}
+
+@keyframes polygon {
+    0% {
+        clip-path: polygon(0 0, 100% 0%, 100% 80px, 25% 80px, 0 80px);
+    }
+    50%{
+        clip-path: polygon(0 0, 100% 0%, 100% 40%, 25% 70%, 0 40%);
+    }
+    100% {
+        clip-path: polygon(0 0, 100% 0%, 100% 100%, 25% 100%, 0 100%);
+    }
+}
+
+@keyframes opacity{
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+}
+
+@keyframes menuMobile{
+    0% {
+        transform: translate3d(100%, 0, 0);
+    }
+    100% {
+        transform: translate3d(0%, 0, 0);
+    }
+}
