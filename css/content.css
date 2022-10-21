@@ -71,6 +71,7 @@ main{
             background-color: var(--black-bg);
             background-image: url('../assets/arrow-right.svg');
         }
+        
 
 #whats-happening{
     background-color: var(--black);
